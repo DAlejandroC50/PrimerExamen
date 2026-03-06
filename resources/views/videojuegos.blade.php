@@ -9,7 +9,7 @@
         <div class="col-md-6">
             <h1 class="fw-bold mb-4">Videojuegos Populares</h1>
             <p class="lead">
-                Descubre algunos de los videojuegos más jugados y aclamados.
+                Man algunos de los videojuegos más amados!
             </p>
 
             <a href="{{ url('/') }}" class="btn btn-outline-secondary mt-3">
@@ -26,17 +26,17 @@
         <x-card 
             title="The Legend of Zelda: Breath of the Wild"
             text="Explora un mundo abierto lleno de aventuras."
-            image="{{ asset('images/videojuegos/zelda.jpg') }}"
+            image="{{ asset('imagenes/videojuegos/zelda.jpg') }}"
         />
         <x-card 
             title="God of War"
             text="Una épica aventura de acción mitológica."
-            image="{{ asset('images/videojuegos/god_of_war.jpg') }}"
+            image="{{ asset('imagenes/videojuegos/god_of_war.jpg') }}"
         />
         <x-card 
             title="Minecraft"
             text="Construye, explora y crea en un mundo sin límites."
-            image="{{ asset('images/videojuegos/minecraft.jpg') }}"
+            image="{{ asset('imagenes/videojuegos/MCmom.jpg') }}"
         />
     </div>
 

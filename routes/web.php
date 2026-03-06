@@ -6,7 +6,7 @@ use App\Http\Controllers\SeriesController;
 use App\Http\Controllers\VideojuegosController;
 
 Route::get('/', function () {
-    return view('peliculas');
+    return view('menu');
 });
 
 Route::get('/peliculas', [PeliculasController::class, 'index'])->name('peliculas');

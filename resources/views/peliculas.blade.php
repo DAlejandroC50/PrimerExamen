@@ -10,7 +10,7 @@
         <div class="col-md-6">
             <h1 class="fw-bold mb-4">Películas Populares</h1>
             <p class="lead">
-                Descubre algunas de las películas más vistas y aclamadas por la crítica.
+                ¡Descubre algunas de las películas más vistas por nuestros espectadores!
             </p>
 
             <a href="{{ url('/') }}" class="btn btn-outline-secondary mt-3">
@@ -26,19 +26,19 @@
     {{-- Lista de tarjetas --}}
     <div class="row">
         <x-card 
-            title="Inception"
-            text="Un thriller de ciencia ficción sobre sueños y realidades."
-            image="{{ asset('images/peliculas/inception.jpg') }}"
-        />
+            title="Superman"
+            image="{{ asset('imagenes/peliculas/Esperanza.jpg') }}"
+            >El Hombre de Acero debe ser gentil en un mundo que considera la amabilidad como algo anticuado."</x-card>
+
         <x-card 
-            title="The Matrix"
-            text="La película que redefine la realidad virtual y la acción."
-            image="{{ asset('images/peliculas/matrix.jpg') }}"
-        />
+            title="Transformers One"
+            text="La revolución de un planeta: El emocional origen de la Guerra entre Optimus Prime Y Megatron."
+            image="{{ asset('imagenes/peliculas/TFONE.jpg') }}"></x-card>
+
         <x-card 
             title="Interstellar"
             text="Exploración del espacio y del tiempo con un drama familiar."
-            image="{{ asset('images/peliculas/interstellar.jpg') }}"
+            image="{{ asset('imagenes/peliculas/interstellar.jpg') }}"
         />
     </div>
 
