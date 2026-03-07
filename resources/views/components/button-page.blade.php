@@ -6,6 +6,7 @@
     'label' => 'Ver más'
 ])
 
+<!-- En el componente text se puede agregar ?? $slot -->
 <div class="col-md-4">
     <h5 class="fw-bold">{{ $title }}</h5>
 

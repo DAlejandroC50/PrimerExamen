@@ -2,6 +2,15 @@
 
 @section('title', 'Películas')
 
+@push('css') 
+<style>
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+</style>
+@endpush
+
 @section('content')
 <div class="container py-5">
 
@@ -10,7 +19,7 @@
         <div class="col-md-6">
             <h1 class="fw-bold mb-4">Películas Populares</h1>
             <p class="lead">
-                ¡Descubre algunas de las películas más vistas por nuestros espectadores!
+                ¡Descubre algunas de las películas favoritas de nuestros espectadores!
             </p>
 
             <a href="{{ url('/') }}" class="btn btn-outline-secondary mt-3">
@@ -28,18 +37,22 @@
         <x-card 
             title="Superman"
             image="{{ asset('imagenes/peliculas/Esperanza.jpg') }}"
-            >El Hombre de Acero debe ser gentil en un mundo que considera la amabilidad como algo anticuado."</x-card>
+            >El Hombre de Acero debe ser gentil en un mundo que considera la amabilidad como algo anticuado.</x-card>
 
         <x-card 
             title="Transformers One"
-            text="La revolución de un planeta: El emocional origen de la Guerra entre Optimus Prime Y Megatron."
-            image="{{ asset('imagenes/peliculas/TFONE.jpg') }}"></x-card>
+            image="{{ asset('imagenes/peliculas/TFONE.jpg') }}"
+            >El emocional origen de Optimus Prime Y Megatron, así como el inicio de la Guerra por Cybertron.</x-card>
 
         <x-card 
-            title="Interstellar"
-            text="Exploración del espacio y del tiempo con un drama familiar."
-            image="{{ asset('imagenes/peliculas/interstellar.jpg') }}"
-        />
+            title="28 años después"
+            image="{{ asset('imagenes/peliculas/Zombies.jpg') }}"
+        >En 28 días empezó. En 28 semanas se extendió. En 28 años evolucionó. El tiempo no resolvió nada.</x-card>
+
+        <x-card 
+            title="Thunderbolts*"
+            image="{{ asset('imagenes/peliculas/Void.jpg') }}"
+        >En el mundo post-Vengadores, un grupo de mercenarios desilusionados son reunidos para una misión donde deberán confrontar sus pasados.</x-card>
     </div>
 
 </div>

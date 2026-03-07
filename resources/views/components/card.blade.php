@@ -9,7 +9,7 @@
     <div {{ $attributes->merge(['class' => 'card h-100 shadow-sm border-0']) }}>
 
         @if($image)
-            <img src="{{ $image }}" class="card-img-top image-fluid" alt="{{ $title }}">
+            <img src="{{ $image }}" class="card-img-top img-fluid" alt="{{ $title }}">
         @endif
 
         <div class="card-body text-center">

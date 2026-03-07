@@ -8,6 +8,9 @@
                     <li class="nav-item"><a class="nav-link" href="/peliculas">Películas</a></li>
                     <li class="nav-item"><a class="nav-link" href="/series">Series</a></li>
                     <li class="nav-item"><a class="nav-link" href="/videojuegos">Videojuegos</a></li>
+
+                    
+                    
                 </ul>
             </div>
         </div>

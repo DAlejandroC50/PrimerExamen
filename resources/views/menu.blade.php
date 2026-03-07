@@ -1,6 +1,25 @@
 @extends('layouts.app')
 
 @section('title', 'Contenido Multimedia | PrimerExamen ')
+<!-- Se utiliza el stack (css) de app.blade-->
+@push('css') 
+<style>
+/* Presentación con gradiente */
+.bg-light {
+    background: linear-gradient(135deg, #f0f8ff, #d9eefa);
+}
+
+/* Botones con hover */
+.btn-primary:hover { transform: scale(1.05); transition: 0.3s; }
+.btn-success:hover { transform: scale(1.05); transition: 0.3s; }
+.btn-warning:hover { transform: scale(1.05); transition: 0.3s; }
+
+/* Espaciado entre columnas de botones */
+.row > div {
+    margin-bottom: 20px;
+}
+</style>
+@endpush
 
 @section('content')
 
@@ -17,21 +36,21 @@
 
     <x-button-page
         title="Películas"
-        text="Descubre las películas más populares y recomendadas."
+        text="¡Descubre las películas más populares y recomendadas!"
         route="peliculas"
         color="primary"
     />
 
     <x-button-page
         title="Series"
-        text="Explora las series más vistas y favoritas del público."
+        text="¡Explora las series más vistas y favoritas del público!"
         route="series"
         color="success"
     />
 
     <x-button-page
         title="Videojuegos"
-        text="Conoce los videojuegos más entretenidos y famosos."
+        text="¡Conoce los videojuegos más entretenidos y populares!"
         route="videojuegos"
         color="warning"
     />

@@ -2,6 +2,15 @@
 
 @section('title', 'Series')
 
+@push('css') 
+<style>
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+</style>
+@endpush
+
 @section('content')
 <div class="container py-5">
 
@@ -24,20 +33,17 @@
 
     <div class="row">
         <x-card 
-            title="Stranger Things"
-            text="Aventura y misterio en un pequeño pueblo lleno de secretos."
-            image="{{ asset('imagenes/series/stranger_things.jpg') }}"
-        />
+            title="Eso: Bienvenidos a Derry"
+            image="{{ asset('imagenes/series/Hunter.jpg') }}"
+            >Visita el pasado de la ciudad que todos se mueren por ver. La amarás tanto que nunca te irás.</x-card>
         <x-card 
-            title="Breaking Bad"
-            text="El viaje de un profesor de química convertido en fabricante de metanfetamina."
-            image="{{ asset('imagenes/series/breaking_bad.jpg') }}"
-        />
+            title="Andor (Segunda Temporada)"
+            image="{{ asset('imagenes/series/Andor.jpeg') }}"
+            >El viaje de Cassian continúa mientras la Alianza Rebelde se consolida en contra del Imperio.</x-card>
         <x-card 
-            title="The Mandalorian"
-            text="Una serie del universo Star Wars centrada en un cazarrecompensas."
-            image="{{ asset('imagenes/series/mandalorian.jpg') }}"
-        />
+            title="The Studio"
+            image="{{ asset('imagenes/series/Hollywood.jpg') }}"
+        >Sigue a un director de TV en su caótico esfuerzo por salvar la productora mientras batalla con Hollywood.</x-card>
     </div>
 
 </div>
